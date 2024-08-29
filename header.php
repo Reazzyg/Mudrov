@@ -4,12 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="title" property="og:title" content="Mudrov - маректинговое агенство полного цикла">
+
+  <meta name="description"
+    content="Разработка и продвижение сайтов. Помогаем вашему бизнесу в интернете с помощью комплексного подхода в маркетинге.">
+  <meta name="description" property="og:description"
+    content="Разработка и продвижение сайтов. Помогаем вашему бизнесу в интернете с помощью комплексного подхода в маркетинге.">
+
+  <meta name="type" property="og:type" content="website">
+
+  <meta name="site_name" property="og:site_name" content="Mudrov">
+
+  <meta name="url" property="og:url" content="https://www.mudrov.pro/">
+
+  <meta name="robots" content="index, follow">
+
+
   <link rel="stylesheet" href="/assets/css/normalize.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
   <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+
+
+
   <title>
     <? echo isset($title) ?  $title . ' | ' :  "" ?> Mudrov - маректинговое агенство полного цикла
   </title>

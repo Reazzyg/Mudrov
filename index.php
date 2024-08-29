@@ -27,7 +27,7 @@ require_once('header.php')
   <div class="container cases-container grid">
     <h2 class="cases__title title-small underline">Кейсы</h2>
     <div class="case underline">
-      <picture> <img src="/assets/img/kelokoti.png" alt="" class="case__img" /> </picture>
+      <picture> <img src="/assets/img/kkti.png" alt="" class="case__img" /> </picture>
       <h3 class="case__title">
         Келокоти
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@ require_once('header.php')
     </div>
     <!-- /. case -->
     <div class="case underline">
-      <picture> <img src="/assets/img/kelosrub.png" alt="" class="case__img" /></picture>
+      <picture> <img src="/assets/img/ksrb.png" alt="" class="case__img" /></picture>
       <h3 class="case__title">
         Кело-сруб
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ require_once('header.php')
     </div>
     <!-- /. case -->
     <div class="case underline">
-      <picture> <img src="/assets/img/estetic.png" alt="" class="case__img" /></picture>
+      <picture> <img src="/assets/img/estet.png" alt="" class="case__img" /></picture>
       <h3 class="case__title">
         Кивач Эстетик Плюс
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,6 +63,19 @@ require_once('header.php')
         </svg>
       </h3>
       <p class="case__subtitle">Сайт клиники пластической хирургии</p>
+    </div>
+    <!-- /. case -->
+    <div class="case underline">
+      <picture> <img src="/assets/img/kotiranta.png" alt="" class="case__img" /></picture>
+      <h3 class="case__title">
+        Котиранта
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
+          <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
+          <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
+        </svg>
+      </h3>
+      <p class="case__subtitle">Сайт базы отдыха</p>
     </div>
     <!-- /. case -->
   </div>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: mudrov.pro
+Sitemap: http://mudrov.pro/sitemap.xml

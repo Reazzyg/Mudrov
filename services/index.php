@@ -19,7 +19,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
         <div class="grid grid-two services__info">
           <div class="services__info-wrapper grid grid-two">
             <h3 class="services__info-title">Мягкая посадка для ваших клиентов</h3>
-            <a href="" class="button services__info-button">отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 100 000 ₽</h3>
@@ -50,7 +50,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
 
             <h3 class="services__info-title">Грамотная презентация вашей компании
             </h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 200 000 ₽</h3>
@@ -91,7 +91,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Покажем ваш продукт с лучших сторон</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 300 000 ₽</h3>
@@ -132,7 +132,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Сложная площадка для прибыльной торговли в интернете</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 450 000 ₽</h3>
@@ -177,7 +177,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Возьмем на поддержку ваш проект</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 2 000 ₽ / час</h3>
@@ -212,7 +212,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
         <div class="grid grid-two services__info">
           <div class="services__info-wrapper grid grid-two">
             <h3 class="services__info-title">Комплексное продвижение вашего бизнеса</h3>
-            <a href="" class="button services__info-button">отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 100 000 ₽</h3>
@@ -248,7 +248,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
 
             <h3 class="services__info-title">Поможем уйти в отрыв от конкурентов
             </h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 30 000 ₽</h3>
@@ -282,7 +282,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Точно в целевую аудиторию</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 20 000 ₽</h3>
@@ -314,7 +314,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Продвижение через мессенджеры</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 10 000 ₽</h3>
@@ -339,7 +339,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Грамотная коммуникация через почту</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 25 000 ₽</h3>
@@ -373,7 +373,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Уникальный контент для ваших соцсетей</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 25 000 ₽</h3>
@@ -415,7 +415,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
         <div class="grid grid-two services__info">
           <div class="services__info-wrapper grid grid-two">
             <h3 class="services__info-title">Уникальный фирменный знак</h3>
-            <a href="" class="button services__info-button">отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 45 000 ₽</h3>
@@ -444,7 +444,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
 
             <h3 class="services__info-title">Визуальный язык вашей компании
             </h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 70 000 ₽</h3>
@@ -480,7 +480,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Визуальный гайдлайн и философия бренда</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 150 000 ₽</h3>
@@ -517,7 +517,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
           <div class="services__info-wrapper grid grid-two">
 
             <h3 class="services__info-title">Функциональные и эстетичные интерфейсы</h3>
-            <a href="" class="button services__info-button">Отправить заявку</a>
+            <a href="/contacts/" class="button services__info-button">Отправить заявку</a>
             <ul class="services__info-list">
               <li class="services__info-item">
                 <h3 class="subtitle services__info-price">от 90 000 ₽</h3>

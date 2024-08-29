@@ -1,0 +1,88 @@
+<?php
+
+// phpinfo();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+
+// Подключаем автозагрузчик Composer
+require '/var/www/u1380419/data/vendor/autoload.php';
+
+// Проверка наличия файлов
+if (file_exists('/var/www/u1380419/data/vendor/PHPMailer/PHPMailer/PHPMailer.php')) {
+    echo "PHPMailer.php найден";
+} else {
+    echo "PHPMailer.php не найден";
+}
+
+if (file_exists('/var/www/u1380419/data/vendor/PHPMailer/PHPMailer/Exception.php')) {
+    echo "Exception.php найден";
+} else {
+    echo "Exception.php не найден";
+}
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$response = [];
+
+// Проверка метода запроса и содержимого
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $response['post'] = $_POST;
+    $response['files'] = $_FILES;
+
+    // Получаем данные из формы
+    $name = $_POST['name'] ?? 'Имя не указано';
+    $phone = $_POST['phone'] ?? 'Телефон не указан';
+    $info = $_POST['info'] ?? 'Информация не указана';
+
+    // Выводим данные для отладки
+    $response['data'] = [
+        'name' => $name,
+        'phone' => $phone,
+        'info' => $info
+    ];
+
+    // Создаем экземпляр PHPMailer
+    $mail = new PHPMailer();
+    echo "PHPMailer класс успешно загружен";
+
+    try {
+        // Настройки SMTP сервера
+        $mail->isSMTP();
+        $mail->Host       = 'mail.mudrov.pro'; // Замените на ваш SMTP сервер
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'info@mudrov.pro'; // Замените на ваш email
+        $mail->Password   = 'Kolobok137'; // Замените на ваш пароль
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 465;
+
+        // Настройки отправителя и получателя
+        $mail->setFrom('info@mudrov.pro', 'Mailer'); // Замените на ваш email и имя отправителя
+        $mail->addAddress('mudrsemen@yandex.ru', 'Joe User'); // Замените на email и имя получателя
+
+        // Содержимое письма
+        $mail->isHTML(true);
+        $mail->Subject = 'Новая заявка с формы';
+        $mail->Body    = "Имя: $name<br>Телефон: $phone<br>Информация: $info";
+        $mail->AltBody = "Имя: $name\nТелефон: $phone\nИнформация: $info";
+
+        // Отправляем письмо
+        $mail->send();
+        $response['status'] = 'success';
+        $response['message'] = 'Сообщение было отправлено';
+    } catch (Exception $e) {
+        $response['status'] = 'error';
+        $response['message'] = "Сообщение не может быть отправлено. Ошибка: {$mail->ErrorInfo}";
+    }
+} else {
+    $response['status'] = 'error';
+    $response['message'] = 'Неправильный метод запроса';
+}
+
+// Возвращаем JSON-ответ
+header('Content-Type: application/json');
+echo json_encode($response);
