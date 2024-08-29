@@ -524,9 +524,6 @@ input {
     transform: translateY(0);
   }
 }
-.header {
-  background-color: red;
-}
 .header-logo {
   display: flex;
   align-items: center;
