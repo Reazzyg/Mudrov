@@ -15,7 +15,7 @@ require_once('header.php')
 
     <h2 class="subtitle hero-subtitle">
       <span class="hero-subtitle__text">
-        Поможем вашему бизнесу в интернете с помощью комплексного подхода в маркетинге
+        Поможем вашему бизнесу в интернете с помощью комплексного подхода в asdasdasd
       </span>
     </h2>
     <!-- /.subtitle hero-subtitle -->

@@ -23,3 +23,4 @@ jobs:
           rm: true
           source: './*'
           target: '/www/mudrov.pro'
+          debug: true
