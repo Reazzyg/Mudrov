@@ -11,16 +11,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
 
-      - name: Copy files to server
-        uses: appleboy/scp-action@main
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
-          # rm: true
-          source: './*'
-          target: '/www/mudrov.pro'
+          source: '**/*'
+          target: 'www/mudrov.pro'
           debug: true
