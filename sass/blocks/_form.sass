@@ -1,0 +1,42 @@
+.form
+  margin-bottom: 100px
+  &__input
+    width: 100%
+    &:focus
+      &+label
+        transform: translate3d(0, -40px, 0)
+        color: hsla(0,0%,100%,.4)
+
+  & label
+    position: absolute
+    left: 0
+    text-transform: uppercase
+    transition: transform .4s, color .3s
+    transition-timing-function: var(--default-timing-function)
+    z-index: -1
+  &-input
+    &-wrap
+      position: relative
+      &:first-child, &:nth-child(2)
+        grid-column: span 2
+        margin-bottom: 70px
+      &._filled
+        & .form__input+label
+          transform: translate3d(0, -40px, 0)
+          color: hsla(0,0%,100%,.4)
+
+  &__button, &__legacy
+    grid-column: 2/4
+  &__button
+    background-color: transparent
+    color: #fff
+    transition: background-color .4s, color .3s
+    transition-timing-function: var(--default-timing-function)
+  &__legacy, &__link
+    color: hsla(0,0%,100%,.4)
+    font-weight: 300
+  &__legacy
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative

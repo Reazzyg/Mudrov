@@ -1,0 +1,46 @@
+.footer
+  background-color: #fff
+  padding: 200px 0 100px
+  & a, li
+    color: #000
+  &__link
+    position: relative
+    font-size: var(--big-title-size)
+    font-weight: 500
+    letter-spacing: -.02em
+    line-height: 110%
+    display: inline-flex
+    width: 100%
+    overflow: hidden
+
+    &-icon
+      margin-left: 30px
+      height: 4.16667vw
+      margin-left: 40px
+      width: 4.16667vw
+
+  &-wrapper
+    padding-top: 20px
+    margin-top: 60px
+    border-top: 2px solid #000
+
+  &-menu
+    grid-column: 3/4
+    display: flex
+    justify-content: center
+    &__item
+      margin-bottom: 20px
+    &__link
+      text-transform: uppercase
+      position: relative
+      padding: 0 10px
+  &__info
+    display: flex
+    flex-direction: column
+    grid-column: 1/3
+  &__phone, &__email
+    text-transform: uppercase
+  &__phone
+    font-size: 40px
+    font-weight: 200
+    margin-bottom: 30px

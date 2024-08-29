@@ -1,0 +1,95 @@
+.path-animate {
+  opacity: 1;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: drawPath 2s ease forwards;
+}
+
+@keyframes drawPath {
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.noise {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.noise_agency-logo,
+.noise_footer,
+.noise_header,
+.noise_transition {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.noise:after {
+  animation: noise 1s steps(2) infinite;
+  content: "";
+  height: calc(100% + 20rem);
+  left: -10rem;
+  position: absolute;
+  top: -10rem;
+  transition: background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  width: calc(100% + 20rem);
+  will-change: transform;
+}
+.noise:after {
+  background: #000 url(/assets/img/noise.webp) repeat 0 0;
+}
+
+@keyframes noise {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}

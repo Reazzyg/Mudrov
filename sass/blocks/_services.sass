@@ -1,0 +1,105 @@
+.services
+  &-container
+    grid-row-gap: 140px
+  &-list
+    grid-column: 1/5
+    margin-bottom: 100px
+    &__item
+      border-bottom: 2px solid #fff
+      transition: border-color .4s, opacity .7s
+      transition-timing-function: var(--default-timing-function)
+      &-link
+        padding: 17px 0 19px
+        position: relative
+        align-items: center
+        border-bottom: 2px solid transparent
+        transition: border-color .1s, opacity .1s
+        transition-timing-function: var(--border-timing-function)
+        &::before, &::after
+          content: ""
+          position: absolute
+          height: 2px
+          width: 26px
+          right: 0
+          top: 50%
+          background-color: #fff
+          opacity: 1
+          transform: translate3d(0, -50%, 0)
+          transition: transform .4s, opacity .4s
+          transition-timing-function: var(--default-timing-function)
+        &::after
+          transform: translate3d(0, -50%, 0) rotate(90deg)
+      &:first-child
+        border-top: 2px solid #fff
+      &._active
+        & .services
+          &__info
+            padding: 60px 0 19px
+            grid-template-rows: 1fr
+          &-list
+            &__item
+              &-link
+                &::after
+                  transform: translate3d(0, -50%, 0) rotate(0deg)
+                &::before
+                  transform: translate3d(0, -50%, 0) rotate(-180deg)
+
+    &__name
+      grid-column: 1/2
+      font-weight: 400
+      font-size: var(--text-size)
+    &__price
+      grid-column: 3/4
+  &__info
+    position: relative
+    min-height: 0
+    justify-items: start
+    align-items: center
+    grid-template-rows: 0fr
+    transition: grid-template-rows .4s
+    transition-timing-function: var(--default-timing-function)
+    overflow: hidden
+    &-wrapper
+      min-height: 0
+      grid-column: span 2
+      justify-items: start
+    &-title , &-button
+      grid-column: 1/2
+    &-title
+      --small-title-size: 2.8vw
+      font-weight: 300
+      font-size: var(--small-title-size)
+    &-price
+      display: none
+      margin-bottom: 20px
+    &-list
+      grid-row: 1/4
+      grid-column: 2/4
+    &-item
+      position: relative
+      padding-left: 15px
+      margin-bottom: 15px
+      font-weight: 400
+      &:first-child
+        padding-left: 0
+        line-height: 150%
+        &::before
+          display: none
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        height: 6px
+        width: 6px
+        background-color: #fff
+        border-radius: 50%
+
+.service
+  padding: 30px 30px 0
+  border-top: 2px solid #fff
+  border-left: 2px solid #fff
+  & .list
+    text-align: end
+    padding-top: 140px

@@ -1,0 +1,40 @@
+.hero
+  padding: 150px 0
+  display: grid
+  &-title
+    font-size: var(--big-title-size)
+
+    font-family: Rclass
+    font-weight: 300
+    color: #fff
+    grid-column: 1/5
+    overflow: hidden
+    &__text
+      &:first-child
+        grid-column: 1/5
+        text-align: left
+        animation: slide 1.2s ease-in-out .4s forwards
+        transform: translateX(-150%)
+      &:nth-child(2)
+        grid-column: 1/5
+        text-align: end
+        transform: translateX(150%)
+        animation: slide 1.2s ease-in-out 1s forwards
+      &--mobile
+        display: none
+  &-subtitle
+    margin-top: 40px
+    grid-column: 3/4
+    font-size: 1.15vw
+    font-weight: 300
+    text-align: left
+    color: #fff
+    opacity: 0
+    animation: reveal 1.2s ease-in-out .7s forwards
+
+@keyframes reveal
+  100%
+    opacity: 1
+@keyframes slide
+  100%
+    transform: translateY(0)

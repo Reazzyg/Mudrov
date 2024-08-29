@@ -1,0 +1,307 @@
+@media (min-width: 1025px)
+  .menu
+    &-list
+      &__link
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 0
+          width: 100%
+          height: 2px
+          background-color: #fff
+          transform: translate3d(0, -50%, 0) scaleX(0)
+          transform-origin: center right
+          transition: transform .4s var(--default-timing-function)
+        &:hover
+          &::before
+            transform: translate3d(0, -50%, 0) scaleX(1)
+            transform-origin: left center
+  .form
+    &__legacy
+      &::before
+        content: ''
+        position: absolute
+        bottom: -5px
+        transform: translateY(-50%)
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: hsla(0,0%,100%,.4)
+        transform: translate3d(0, -50%, 0) scaleX(0)
+        transform-origin: center right
+        transition: transform .4s var(--default-timing-function)
+      &:hover
+        &::before
+          transform: translate3d(0, -50%, 0) scaleX(1)
+          transform-origin: left center
+    &__button
+      &:hover
+        background-color: #fff
+        color: #000
+  .hero
+    &-title
+      --big-title-size: 6.25vw
+  .case
+    &__img
+      transition: transform .7s var(--default-timing-function)
+      overflow: hidden
+      &:hover
+        transform: scale(1.03)
+  .services
+    &-list
+      &__item
+        &:hover
+          border-top-color: hsla(0,0%,100%,.4)
+          border-bottom-color: hsla(0,0%,100%,.4)
+          & .services__info::before
+            transform: translate3d(0, -50%, 0) scaleX(1)
+            transform-origin: left center
+    &__info
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        transform: translateY(-50%)
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: #fff
+        transform: translate3d(0, -50%, 0) scaleX(0)
+        transform-origin: center right
+        transition: transform .4s var(--default-timing-function)
+  .contacts
+    &-social
+      &::after
+        content: ''
+        position: absolute
+        bottom: -5px
+        transform: translateY(-50%)
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: hsla(0,0%,100%,.4)
+        transform: translate3d(0, -50%, 0) scaleX(0)
+        transform-origin: center right
+        transition: transform .4s var(--default-timing-function)
+      &:hover
+        &::after
+          transform: translate3d(0, -50%, 0) scaleX(1)
+          transform-origin: left center
+  .footer
+    &__link
+      &-inner
+        transition: transform .47s cubic-bezier(.55,0,.1,1) 0ms
+        &:first-child
+          transform: translateZ(0)
+        &:last-child
+          left: 0
+          position: absolute
+          top: 0
+          transform: translate3d(0, -100%, 0)
+      &:hover
+        & .footer__link-inner
+          &:first-child
+            transform: translate3d(0, 100%, 0)
+          &:last-child
+            transform: translateZ(0)
+
+    &-menu
+      &__link
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 0
+          width: 100%
+          height: 2px
+          background-color: #000
+          transform: translate3d(0, -50%, 0) scaleX(0)
+          transform-origin: center right
+          transition: transform .4s var(--default-timing-function)
+        &:hover
+          &::before
+            transform: translate3d(0, -50%, 0) scaleX(1)
+            transform-origin: left center
+
+@media  ( max-width: 1200px  )
+  .header
+    &__phone
+      font-size: 14px
+    &-lang
+      margin-left: 15px
+
+@media  ( max-width: 1024px  )
+  :root
+    --big-title-size: 9.59233vw
+    --text-size: 18px
+  .header
+    &-container
+      &.grid
+        grid-template-columns: repeat(2,1fr)
+    &-menu
+      display: none
+      &--mobile
+        display: block
+    &__info
+      height: 100%
+    &__phone
+      display: none
+    &-burger
+      display: flex
+    &-lang
+      display: none
+      &--mobile
+        display: block
+        margin-left: 0
+  .hero
+    padding: 9.02778vw 0 11.11111vw
+    &-title
+      --big-title-size: 9.59233vw
+      &__text
+        &--desctop
+          display: none
+        &--mobile
+          display: block
+          grid-column: 1 / 5
+          text-align: end
+          transform: translateX(150%)
+          animation: slide 1.2s ease-in-out 1s forwards
+        &:nth-child(2)
+          text-align: start
+          transform: translateX(-150%)
+    &-subtitle
+      font-size: 20px
+      grid-column: 1/4
+  .grid
+    grid-template-columns: repeat(4,1fr)
+    grid-gap: 20px
+    &.grid-two
+      grid-template-columns: repeat(2,1fr)
+  .case
+    grid-column: span 4
+    &__img
+      height: unset
+  .about
+    &-container
+      grid-template-columns: 1fr
+    &-info
+      grid-column: span 2
+
+  .services
+    &__info
+      &-title, &-button , &-list
+        grid-column: 1/3
+      &-title
+        font-size: 28px
+      &-price
+        display: block
+      &-item
+        &:nth-child(2)
+          padding-left: 0
+          line-height: 150%
+          &::before
+            display: none
+    &-list
+      &__price
+        display: none
+      &__item
+        &._active
+          & .services__info
+            padding-top: 30px
+
+  .service
+    grid-column: 1/5
+    margin-bottom: 20px
+    & .list
+      padding-top: 80px
+  .contacts
+    &-wrapper
+      grid-column: 1/3
+  .agency
+    &__text
+      grid-column: 2/5
+  .footer
+    padding: 100px 0 50px
+    &-wrapper
+      margin-top: 0
+    &__link
+      padding-bottom: 40px
+      &-icon
+        height: 6.65874vw
+        margin-left: 3.56718vw
+        width: 6.65874vw
+      &-inner
+        &:first-child
+          display: none
+
+    &__info
+      grid-column: 1/4
+    &-menu
+      grid-column: 3/5
+    &-socials
+      grid-column: 1/3
+
+@media  ( max-width: 768px  )
+  .container
+    padding: 0 10px
+  .footer
+    &__link
+      padding-bottom: 0
+  .form
+    &__button, &__legacy
+      grid-column: span 4
+    &__button
+      margin-bottom: 15px
+  .agency
+    &__text
+      grid-column: 1/5
+      font-size: 18px
+      font-weight: 300
+    &.services
+      & .service
+        & .list
+          padding-top: 60px
+@media  ( max-width: 576px  )
+  :root
+    --small-title-size: 6.5vw
+  .grid
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 10px
+  .button, button
+    padding: 3.38889vw 5.16667vw
+  .hero
+    &-title
+      &__text
+        &:first-child
+
+          grid-column: span 2
+        &:nth-child(2)
+          grid-column: span 2
+        &--mobile
+
+          grid-column: span 2
+    &-subtitle
+      grid-column: span 2
+      font-size: 18px
+  .cases
+    &__title
+      grid-column: 1/3
+  .about
+    &-info
+      &__text
+        font-size: 18px
+  .case
+    margin-bottom: 20px
+  .form
+    padding-top: 20px
+    &__input
+      border-radius: 5px
+  .contacts
+    &__link
+      font-size: var(--big-tile-size)
+  .footer
+    &__phone
+      font-size: 28px

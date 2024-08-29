@@ -1,0 +1,196 @@
+.header
+  padding: 15px 0
+  &-container
+    width: 100%
+    align-items: center
+  &-logo
+    grid-column: 1/2
+    width: 100%
+    &__letter
+      height: 40px
+      width: 45px
+  &__info
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  &__phone
+    color: #fff
+  &-burger
+    position: absolute
+    width: 50px
+    height: 35px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    display: none
+    z-index: 1
+    &__line
+      width: 100%
+      height: 2px
+      background-color: #fff
+      transition: transform .6s
+    &.close
+      & .header
+        &-burger
+          &__line
+            &:first-child
+              transform: translate3d(0%, 9px, 0) rotate(45deg)
+            &:nth-last-child(1)
+              transform: translate3d(0%, calc(9px * -1), 0) rotate(-45deg)
+  &-menu
+    &--mobile
+      display: none
+      transition: transform .5s
+      padding: 20px
+      transform: translateX(-150%)
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+      background-color: #000
+      overflow: hidden
+      // height: calc( 100vh - 70px )
+      & .menu
+        &-list
+          margin-top: 30px
+          flex-direction: column
+          align-items: flex-start
+          &__link
+            padding: 0
+            font-size: var(--big-title-size)
+      &.animate
+        transition: transform .8s
+        transform: translateX(0%)
+  &-lang
+    position: relative
+    height: 30px
+    width: 60px
+    border: 2px solid $white
+    border-radius: 20px
+    margin-left: 30px
+    cursor: pointer
+    &__switch
+      height: 25px
+      width: 25px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      border-radius: 50%
+      background-color: $white
+      right: unset
+      left: 2px
+      transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1)
+
+      &--right
+
+        left: unset
+        right: 2px
+    &__lang
+      font-size: 14px
+      text-transform: uppercase
+      position: absolute
+      top: 50%
+      left: 4px
+      z-index: 1
+      transform: translateY(-50% )
+      transition: color .4s cubic-bezier(0.25, 0.1, 0.25, 1)
+      &:nth-last-child(1)
+        left: unset
+        right: 4px
+
+      &--active
+        color: $black
+    &--mobile
+      display: none
+
+.menu
+  grid-column: 2 / 4
+  &-list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__link
+      padding: 0 15px
+      position: relative
+      color: #fff
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 1.15vw
+      position: relative
+
+  &-mobile
+    display: none
+
+@keyframes slideBack
+
+  100%
+    transform: translateX(150%)
+
+.noise
+  height: 100%
+  left: 0
+  overflow: hidden
+  pointer-events: none
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: -1
+
+.noise_agency-logo,
+.noise_footer,
+.noise_header,
+.noise_transition
+  left: 0
+  overflow: hidden
+  position: fixed
+  top: 0
+
+.noise:after
+  animation: noise 1s steps(2) infinite
+  content: ""
+  height: calc(100% + 20rem)
+  left: -10rem
+  position: absolute
+  top: -10rem
+  transition: background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)
+  width: calc(100% + 20rem)
+  will-change: transform
+
+.noise:after
+  background: #000 url(/assets/img/noise.webp) repeat 0 0
+
+@keyframes noise
+  0%
+    transform: translate3d(0, 9rem, 0)
+
+  10%
+    transform: translate3d(-1rem, -4rem, 0)
+
+  20%
+    transform: translate3d(-8rem, 2rem, 0)
+
+  30%
+    transform: translate3d(9rem, -9rem, 0)
+
+  40%
+    transform: translate3d(-2rem, 7rem, 0)
+
+  50%
+    transform: translate3d(-9rem, -4rem, 0)
+
+  60%
+    transform: translate3d(2rem, 6rem, 0)
+
+  70%
+    transform: translate3d(7rem, -8rem, 0)
+
+  80%
+    transform: translate3d(-9rem, 1rem, 0)
+
+  90%
+    transform: translate3d(6rem, -5rem, 0)
+
+  to
+    transform: translate3d(-7rem, 0, 0)
