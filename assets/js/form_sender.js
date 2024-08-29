@@ -10,11 +10,11 @@ function animateDots(element, baseText) {
   let dotCount = 0;
 
   const interval = setInterval(() => {
-    console.log(dotCount);
     dotCount = (dotCount + 1) % 4; // Увеличиваем счетчик и сбрасываем до 0, когда достигаем 4
+
     const dots = '.'.repeat(dotCount); // Генерируем строку из dotCount точек
+
     element.innerText = baseText + dots;
-    console.log(dotCount);
   }, 300);
 
   return interval;
@@ -54,7 +54,7 @@ function handleSubmit(event) {
   const submitButton = event.target;
 
   // Начинаем анимацию точек
-  submitButton.innerText = getCookie('lang') === 'ru' ? 'Отправка' : 'Sending';
+  submitButton.innerText = getCookie('lang') !== 'en' ? 'Отправка' : 'Sending';
 
   const animationInterval = animateDots(submitButton, submitButton.innerText);
 
