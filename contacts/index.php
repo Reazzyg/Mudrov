@@ -55,7 +55,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/header.php')
       <!-- /.subtitle -->
       <a href="mailto:mudrsemen@ya.ru" class="contacts__link title-small">mudrsemen@ya.ru</a>
       <!-- /.contacts__link -->
-      <a href="" class="contacts__link contacts-social contacts-social__tg">Telegramm</a>
+      <a href="t.me/Mudrov_digital_marketing_bot"
+        class="contacts__link contacts-social contacts-social__tg">Telegramm</a>
       <!-- /.contacts__link -->
       <a href="https://api.whatsapp.com/send?phone=79814009433?text='Здравствуйте,' "
         class="contacts__link contacts-social contacts-social__wa">WatsApp</a>

@@ -91,35 +91,35 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/en-header.php')
 <section class="services">
   <div class="container services-container grid grid-two">
     <div class="service">
-      <h2 class="title service__title">Разработка</h2>
+      <h2 class="title service__title">DEVELOPMENT</h2>
       <ul class="list">
-        <li class="list__item">Разработка сайтов</li>
-        <li class="list__item">Разработка сервисов и систем</li>
-        <li class="list__item">Сопровождение и поддержка</li>
+        <li class="list__item">Website development</li>
+        <li class="list__item">Development of services and systems</li>
+        <li class="list__item">Support and maintenance</li>
       </ul>
     </div>
     <!-- /.service -->
     <div class="service">
-      <h2 class="title service__title">МАРКЕТИНГ</h2>
+      <h2 class="title service__title">MARKETING</h2>
       <ul class="list">
-        <li class="list__item">Комплексный маркетинг</li>
-        <li class="list__item">Контекстная реклама</li>
-        <li class="list__item">Таргетированная реклама</li>
-        <li class="list__item">Медийная реклама</li>
-        <li class="list__item">Сквозная аналитика</li>
-        <li class="list__item">Комплексный SMM</li>
+        <li class="list__item">Complex marketing</li>
+        <li class="list__item">Contextual advertising</li>
+        <li class="list__item">Targeted advertising</li>
+        <li class="list__item">Media advertising</li>
+        <li class="list__item">Cross-cutting analytics</li>
+        <li class="list__item">Complex SMM</li>
         <li class="list__item">SEO</li>
       </ul>
     </div>
     <!-- /.service -->
     <div class="service">
-      <h2 class="title service__title">ДИЗАЙН</h2>
+      <h2 class="title service__title">DESIGN</h2>
       <ul class="list">
-        <li class="list__item">UX/UI дизайн</li>
-        <li class="list__item">Прототипирование</li>
-        <li class="list__item">Анимации</li>
-        <li class="list__item">Дизайн логотипа</li>
-        <li class="list__item">Брендинг</li>
+        <li class="list__item">UX/UI design</li>
+        <li class="list__item">Prototyping</li>
+        <li class="list__item">Animations</li>
+        <li class="list__item">Logo design</li>
+        <li class="list__item">Branding</li>
       </ul>
     </div>
     <!-- /.service -->

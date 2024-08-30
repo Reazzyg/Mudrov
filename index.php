@@ -15,7 +15,7 @@ require_once('header.php')
 
     <h2 class="subtitle hero-subtitle">
       <span class="hero-subtitle__text">
-        Поможем вашему бизнесу в интернете с помощью комплексного подхода в макетинге
+        Поможем вашему бизнесу в интернете с помощью комплексного подхода в маркетинге
       </span>
     </h2>
     <!-- /.subtitle hero-subtitle -->
@@ -28,53 +28,66 @@ require_once('header.php')
     <h2 class="cases__title title-small underline">Кейсы</h2>
     <div class="case underline">
       <picture> <img src="/assets/img/kkti.png" alt="" class="case__img" /> </picture>
-      <h3 class="case__title">
-        Келокоти
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
-        </svg>
-      </h3>
+      <a target="_blank" href="https://келокоти.рф">
+        <h3 class="case__title">
+          Келокоти
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
+          </svg>
+        </h3>
+      </a>
       <p class="case__subtitle">Комплексный маркетинг для производства срубов</p>
     </div>
     <!-- /. case -->
     <div class="case underline">
       <picture> <img src="/assets/img/ksrb.png" alt="" class="case__img" /></picture>
-      <h3 class="case__title">
-        Кело-сруб
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
-        </svg>
-      </h3>
+      <a target="_blank" href="https://kelo-srub.ru">
+        <h3 class="case__title">
+          Кело-сруб
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
+          </svg>
+        </h3>
+      </a>
       <p class="case__subtitle">Комплексный маркетинг для производства срубов</p>
     </div>
     <!-- /. case -->
+
+
     <div class="case underline">
       <picture> <img src="/assets/img/estet.png" alt="" class="case__img" /></picture>
-      <h3 class="case__title">
-        Кивач Эстетик Плюс
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
-        </svg>
-      </h3>
+      <a target="_blank" href="https://semen.kivach.ru">
+
+        <h3 class="case__title">
+          Кивач Эстетик Плюс
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
+          </svg>
+        </h3>
+      </a>
       <p class="case__subtitle">Сайт клиники пластической хирургии</p>
     </div>
     <!-- /. case -->
     <div class="case underline">
       <picture> <img src="/assets/img/kotiranta.png" alt="" class="case__img" /></picture>
-      <h3 class="case__title">
-        Котиранта
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
-          <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
-        </svg>
-      </h3>
+      <a target="_blank" href="https://котиранта.рф">
+
+        <h3 class="case__title">
+          Котиранта
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path vector-effect="non-scaling-stroke" d="M25 25L25 1.78814e-07" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 25L25 1" stroke="white" stroke-width="2"></path>
+            <path vector-effect="non-scaling-stroke" d="M1 1L26 1" stroke="white" stroke-width="2"></path>
+          </svg>
+        </h3>
+      </a>
+
       <p class="case__subtitle">Сайт базы отдыха</p>
     </div>
     <!-- /. case -->
@@ -94,7 +107,7 @@ require_once('header.php')
         </span>
       </div>
       <div class="">
-        <a href="" class="about-info__button">Больше о нас</a>
+        <a href="/agency/" class="about-info__button">Больше о нас</a>
       </div>
     </div>
   </div>

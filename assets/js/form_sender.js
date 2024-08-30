@@ -4,7 +4,7 @@ let form = document.querySelector('form');
 
 const sendBtn = document.querySelector('button[type="submit"]');
 
-sendBtn.addEventListener('click', handleSubmit);
+if (sendBtn) sendBtn.addEventListener('click', handleSubmit);
 
 function animateDots(element, baseText) {
   let dotCount = 0;

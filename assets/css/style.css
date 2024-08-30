@@ -847,6 +847,7 @@ input {
   width: 100%;
   height: 100%;
   filter: grayscale(0.15);
+  object-fit: cover;
 }
 .case__title {
   font-family: Rclass;
@@ -1373,6 +1374,9 @@ input {
     grid-column: span 4;
   }
   .case__img {
+    height: unset;
+  }
+  .case picture {
     height: unset;
   }
   .about-container {
